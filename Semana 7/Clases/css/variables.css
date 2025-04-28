@@ -1,0 +1,7 @@
+:root{
+    --color-primario: #3498db;
+}
+
+.elemento{
+    color: var(--color-primario);
+}

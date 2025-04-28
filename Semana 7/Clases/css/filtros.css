@@ -1,0 +1,3 @@
+.elemento{
+    filter:blur(1px) saturate(5%) hue-rotate(90deg)
+}

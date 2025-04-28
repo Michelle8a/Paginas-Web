@@ -1,0 +1,41 @@
+.container{
+    display: grid;
+    perspective: 1000px;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px 100px;
+    grid-gap: 5px;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: skewX(-15deg);
+    position: relative;
+    left: 29px;
+}
+
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transform: skewX(-15deg);
+    position: relative;
+    left: 29px;
+}
+
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transform: skewX(-15deg);
+}
+
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    transform: skewX(-15deg);
+}

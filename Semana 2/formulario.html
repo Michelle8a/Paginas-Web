@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--CONTROL TEXT-->
+    Ingresa nombre de usuario y contraseña
+    <form>
+        Nombres: <input type="text" name="nombre"><br>
+        Apellidos: <input type="text" name="apellidos"><br>
+        Edad: <input type="text" name="edad"><br>
+        Carrera: <input type="text" name="carrera"><br>
+    </form>
+    <br>
+
+    <!--CONTROL RADIO-->
+    <form>
+        ¿Cual es tu edad? <br>
+        <input type="radio" name="edad1" value="18-21">18-21 años <br>
+        <input type="radio" name="edad2" value="22-40">22-40 años <br>
+        <input type="radio" name="edad3" value="41-60">41-60 años <br>
+        <input type="radio" name="edad4" value="mayor60">Mayor a 60 años <br>
+    </form>
+    <br>
+
+    <!--CONTROL CHECKBOX-->
+    <form>
+        ¿Cuales son tus medios de transporte? <br>
+        <input type="checkbox" name="vehiculo1" value="moto">1Motocicleta <br>
+        <input type="checkbox" name="vehiculo2" value="auto">Automovil <br>
+        <input type="checkbox" name="vehiculo3" value="bici">Bicicleta <br>
+        <input type="checkbox" name="veehiculo4" value="bus">Autobus <br>
+    </form>
+    <br>
+
+    <!--CONTROL PASSWORD-->
+    <form>
+        Ingrese nombre de usuario y contraseña <br>
+        Usuario: <input type="text" name="usuario"><br>
+        Contraseña: <input type="password" name="pass"><br>
+    </form>
+    <br>
+
+    <!--ETIQUETAS SELECT Y OPTION-->
+    <form>
+        ¿Cual es tu fruta favorita?<br>
+        <select name="frutas">
+            <option value="papaya">Papaya</option>
+            <option value="fresas">Fresas</option>
+            <option value="kiwi">Kiwi</option>
+            <option value="mango">Mango</option>
+            <option value="otras">Otras...</option>
+        </select>
+    </form>
+    <br>
+
+    <!--ETIQUETA TEXT AREA-->
+    <form>
+        Direccion de Residencia:<br>
+        <textarea rows="10" cols="30">
+
+        </textarea>
+    </form>
+    <br>
+
+    <!--ETIQUETA FIELDSET Y LEGEND-->
+    <form>
+        <fieldset>
+            <legend>Datos Personales</legend>
+            Nombre: <input type="text" name="nombre" value="">
+            <br>
+            Apellido: <input type="text" name="apellido" value="">
+        </fieldset>
+    </form>
+    <br>
+
+    <!--ATRIBUTO TYPE-->
+    <form>
+        <input type="submit" name="enviar" value="Enviar">
+        <input type="reset" name="borrar" value="Borrar">
+    </form>
+    <br>
+
+    <hr color="blue">
+
+    <h4>CURRICULUM VITAE</h4>
+    <form>
+        <fieldset>
+            <legend>Datos Personales</legend>
+            Nombre: <input type="text" name="nombres"><br>
+            Apellidos: <input type="text" name="apellidos">
+            Estado Civil:
+            <select>
+                <option value="soltero">Soltero</option>
+                <option value="casado">Casado</option>
+                <option value="divorciado">Divorciado</option>
+                <option value="viudo">Viudo</option>
+            </select>
+            <br>
+            Edad: <input type="text" name="edad"><br>
+            Direccion: <input type="text" name="direccion"><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Estudios Realizados</legend>
+            Educacion Basica: <input type="text" name="basica"><br>
+            Año de Graduacion: <input type="text" name="añograd"><br>
+            Bachillerato: <input type="text" name="bach"><br>
+            Año de Graduacion: <input type="text" name="añobach"><br>
+        </fieldset>
+
+        <input type="submit" name="aceptar" value="Aceptar">
+        <input type="reset" name="salir" value="Salir">
+    </form>
+
+    <hr color="blue">
+
+    <form>
+        Nombre: <input type="text" name="nombres"><br>
+        Apellidos: <input type="text" name="apellidos"><br>
+        Genero: <input type="radio" name="genero1" value="masculino">Masculino
+        <input type="radio" name="genero2" value="femenino">Femenino <br>
+        Fecha de Nacimiento: <input type="date" name="fecha"><br>
+        Edad: <input type="number" name="edad" start="1">
+    </form>
+
+</body>
+</html>

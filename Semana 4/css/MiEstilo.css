@@ -1,0 +1,65 @@
+p
+{
+    color: darkorange;
+    font-size: 25px;
+    text-align: justify;
+}
+
+.p02
+{
+    color: blue;
+    border: 3px solid #4b3621;
+    padding: 25px;
+    background-color: lemonchiffon;
+    width: 650px;
+}
+
+p::before
+{
+    content: "💀😺"; /* buscar emojipedia.org, */
+}
+.MiFlexContenedor{
+    display: flex ;
+    flex-direction: row;
+    justify-content: space-between ;
+    align-items: center;
+
+}
+.MiFlexContenedor div{
+    background-color: #27ae60  ;
+    color: #ffffff ;
+    padding: 10px;
+    margin: 5px;
+}
+
+.ContenedorFlex
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+}
+.caja{
+    width: 100px;
+    height: 50px;
+    background-color: #2ecc71;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;   
+
+}
+.elementoTransicion{
+    width: 100px;
+    height: 100px;
+    background-color: #e74c3c;
+    color:#fff ;
+    text-align: center;
+    line-height:100px ;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.elementoTransicion:hover{
+background-color: #2c3e50;
+color: #ffd700;
+transform: scale(1.5) ; ;
+}

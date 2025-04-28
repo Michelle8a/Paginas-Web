@@ -1,0 +1,57 @@
+VARIABLES
+:root {--color-primary: #3498db;}
+.box {background-color: var(--color-primary);}
+
+MEDIA QUERY
+Para pantallas de hasta 768px de ancho
+@media screen and (max-width: 768px) {
+    .menu {
+    display: none; Oculta el menú cuando el ancho de la pantalla es
+    menor o igual a 768px
+    }
+}
+
+FILTROS
+filter: none | blur() | brightness() | contrast() | drop-shadow() 
+    grayscale() | hue-rotate() | invert() 
+    opacity() | saturate() | sepia() | url();
+
+
+GRIDS
+grid: none|grid-template-rows | grid-template-columns|grid-template-areas|grid-template-rows 
+    [grid-auto-flow] grid-auto-columns|[grid-auto-flow] grid-auto-rows 
+    grid-template-columns|initial|inherit;
+    
+
+KEYFRAMES
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: example 4s linear infinite;
+}
+
+@keyframes example{
+    from{
+        background-color: red;
+    }
+    to{
+        background-color: yellow;
+    }
+}
+
+MIX-BLEND-MODE
+.normal {mix-blend-mode: normal;}
+.multiply {mix-blend-mode: multiply;}
+.screen {mix-blend-mode: screen;}
+.overlay {mix-blend-mode: overlay;}
+.darken {mix-blend-mode: darken;}
+.lighten {mix-blend-mode: lighten;}
+.color-dodge {mix-blend-mode: color-dodge;}
+.color-burn {mix-blend-mode: color-burn;}
+.difference {mix-blend-mode: difference;}
+.exclusion {mix-blend-mode: exclusion;}
+.hue {mix-blend-mode: hue;}
+.saturation {mix-blend-mode: saturation;}
+.color {mix-blend-mode: color;}
+.luminosity {mix-blend-mode: luminosity;}

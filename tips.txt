@@ -1,0 +1,177 @@
+<address>	    <tfoot>         <h1>-<h6>
+<article>	    <section>       <form>
+<aside>		    <video>         <figure>
+<blockquote>	<main>          <footer>
+<canvas>	    <nav>           <header>
+<dd>		    <noscript>      <figcaption>
+<div>		    <pre>           <fieldset>
+
+
+<!--Titulos-->
+    <h1>Titulo</h1>
+    <h2>Titulo</h2>
+    <h3>Titulo</h3>
+    <h4>Titulo</h4>
+    <h5>Titulo</h5>
+    <h6>Titulo</h6> 
+
+    <!--Fuentes-->
+    <p>H <sub>2</sub>O</p>
+
+	<p>x <sup>2</sup> + y <sup>2</sup> = z <sup>2</sup> </p>
+
+    <!--a. Negrita: <B>…</B>
+        b. Cursiva: <I>…</I>
+        c. Subrayado: <U>…</U>
+        d. Teletipo: <TT>…</TT>
+        e. Tachado: <STRIKE>…</STRIKE>
+        f. Grande: <BIG>…</BIG>
+        g. Pequeña: <SMALL>…</SMALL>
+        h. Superíndice: <SUP>…</SUP>
+        i. Subíndice: <SUB>…</SUB>
+    -->
+
+    <!--Linea Horizontal-->
+    <hr color = blue size = 40 width="50">
+    <hr style="border: none; height: 40px; background-color: blue;">
+    
+    <!--Marquesina-->
+    <marquee behavior="scroll" direction="left">¡Este texto se mueve de izquierda a derecha!</marquee>
+    
+    <marquee direction="left" width=400 height=200  style="border:solid"> 
+        <marquee behavior="alternate"> este texto rebotara dentro de la marquesina</marquee>
+    </marquee>
+
+    <marquee behavior="scroll" direction="right" scrollamount="15" loop="infinite">
+        ¡Este texto se moverá rápido hacia la derecha y nunca se detendrá!
+      </marquee>
+    
+    <!--behavior: Define cómo se moverá el contenido.
+            "scroll" (predeterminado): El texto se desplaza y reaparece.
+            "slide": El texto se desplaza y se detiene al final.
+            "alternate": El texto rebota entre los extremos.
+        direction: Dirección del movimiento.
+            "left" (predeterminado): De derecha a izquierda.
+            "right": De izquierda a derecha.
+            "up": De abajo hacia arriba.
+            "down": De arriba hacia abajo.
+        scrollamount: Controla la velocidad del desplazamiento.
+        loop: Número de veces que se repite la animación.-->
+
+    <p><font face= “Arial" size=4 color="red">Etiquetas</font></p>
+
+    <img src="foto.jpg" border="1" alt="Foto">
+
+    <!--Acentos-->
+    <!--&aacute, &eacute, &iacute, &oacute, &uacute-->
+    <h1><b>Men&uacute</b></h1>
+    
+
+    <!--LISTAS-->
+    <li>
+    
+    <!--Listas Ordenadas-->
+    <ol>
+        <li>
+        </li>
+    </ol>
+    
+    <!--Atributos-->
+    <ol type=“1”, “I”, “a”, “i”></ol>
+    
+    <!--Listas Desordenadas-->
+    <ul>
+        <li><a href="#/home">Home</a></li>
+        <li><a href="#/products">Products</a></li>
+        <li><a href="#/about">About Us</a></li>
+      </ul> 
+    
+    <!--Atributos-->
+    <ul type=“square”, “disc”,“circle”></ul>
+    
+    <!--Listas de Definicion-->
+    <dl>
+        <dt> Nombre del Termino
+        <dd> Definición del termino
+    </dl>
+
+    <!--TABLAS-->
+    <table border="1" cellspacing="0" bgcolor="#9ce8f1"> <!--Se crea la tabla-->
+        <tr> <!--Primera fila-->
+            <th>Producto</th>
+            <th>Marca</th>
+            <th>Precio</th>
+        </tr>
+
+        <tr> <!--Segunda fila-->
+            <td width="150">Tapabocas N95</td>
+            <td align="center">3M</td>
+            <td>$ 20.000</td>
+        </tr>
+
+        <tr> <!--Tercera fila-->
+            <td>Alcohol 70%</td>
+            <td>MK</td>
+            <td>$ 7.000</td>
+        </tr>
+    </table>
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  border-radius: 10px;
+  border-style: dotted;
+  border-color: #96D4D4;
+}
+th, td {
+  background-color: #96D4D4;
+}
+
+LINK
+<a href="url">link</a>
+
+IMAGEN
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="" alt="" href="">
+  <area shape="poly" coords="" alt="" href="">
+  <area shape="circle" coords="" alt="" href="">
+</map>
+
+VIDEO
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+
+INPUT
+<input type="button">               <input type="image">
+<input type="month">                <input type="hidden">
+<input type="number">               <input type="file">
+<input type="password">             <input type="range">
+<input type="radio">                <input type="checkbox">
+<input type="date">                 <input type="week">
+<input type="reset">                <input type="color">
+<input type="search">               <input type="email">
+<input type="submit">               <input type="datetime-local">
+<input type="tel">                  <input type="url">
+<input type="time">
+<input type="text"> (default value)
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+:root {
+    --color-primary: #3498db;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-primary);
+}
+    

@@ -1,0 +1,15 @@
+/* Estilos comunes para todos los tamaños de pantalla */
+.menu {
+    /* Estilos del menu comunes */
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Media query para pantallas de hasta 768px de ancho */
+@media screen and (max-width: 768px) {
+    .menu {
+    display: none; /* Oculta el menú cuando el ancho de la pantalla es
+    menor o igual a 768px */
+    }
+}

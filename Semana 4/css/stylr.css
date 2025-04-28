@@ -1,0 +1,79 @@
+.boton{
+	background-color: blue;
+	border: 2px solid #4b3621;
+	color: white;
+	width: 200px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	transition: all 0.1s ease-in-out;
+	cursor: pointer;
+}
+.boton:hover{
+	background-color: lightgreen;
+	color: yellow;
+}
+
+.encabezado1{
+	color: peachpuff;
+	text-align: center;
+	border: 3px solid #4b3621;
+	padding: 25px;
+}
+.encabezado2{
+	color: blueviolet;
+	text-align: center;
+	border: 5px solid #4b3621;
+	padding: 25px;
+}
+.encabezado3{
+	color: darkseagreen;
+	text-align: center;
+	border: 7px solid #4b3621;
+	padding: 25px;
+}
+
+.cajaSombras{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: lightgray;
+	border: 3px solid #4b3621;
+	box-shadow: 5px 5px 5px 5px #5c5c5c, inset 5px 10px 5px #5c5c5c;
+	width: 100px;
+	height: 100px;
+}
+
+.website{
+	font-size: 25px;
+	font-weight: bold;
+	color: blueviolet;
+	font-style: italic;
+}
+
+.barra{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: pink;
+	border: 1px solid black;
+}
+
+.barra	a{
+	background-color: lightpink;
+	font-style: italic;
+	color: hotpink;
+	font-weight: bold;
+	padding: 15px 20px;
+	border: 0.5px solid black;
+	transition: all 0.1s ease-in-out;
+	cursor: pointer;
+}
+
+.barra a:hover{
+	color: rebeccapurple;
+}
+
+.barra-opciones{
+	display: flex;
+}

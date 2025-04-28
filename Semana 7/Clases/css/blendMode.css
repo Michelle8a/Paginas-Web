@@ -1,0 +1,40 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #007bff;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* Estilos específicos */
+.elemento {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    mix-blend-mode: overlay;
+}
+
+.otro-elemento {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    mix-blend-mode: screen;
+}

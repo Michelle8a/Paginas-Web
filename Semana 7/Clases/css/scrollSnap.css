@@ -1,0 +1,26 @@
+/*Estilos para el contenedor*/
+.contenedor{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll; /*Agrega el scroll vertical*/
+    height: 400px; /*Altura del contenedor*/
+    border: 1px solid black; /*Borde para visualizar el contenedor*/
+}
+
+/*Estilos para las secciones*/
+.seccion{
+    height: 300px; /*Altura de cada seccion*/
+    background-color: lightgreen; /*Color de fondo*/
+    margin-bottom: 20px; /*Margen inferios para separar las secciones*/
+    scroll-snap-align: start; /*Alineacion del desplazamiento*/
+    padding: 20px; /*Espaciado interno*/
+    border-radius: 5px; /*Borde redondeado*/
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /*Sombra*/
+}
+
+.seccion:nth-child(1){
+    background-color: rgb(224, 225, 157);
+}
+
+.seccion:nth-child(3){
+    background-color: lightblue;
+}

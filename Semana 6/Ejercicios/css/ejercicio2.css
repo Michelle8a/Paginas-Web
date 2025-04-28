@@ -1,0 +1,17 @@
+.box{
+    width: 500px;
+    height: 500px;
+    background-color: lightgreen;
+    animation: example 5s linear infinite;
+}
+
+@keyframes example{
+    from{
+        background-color: lightgreen;
+    }
+
+    to{
+        background-color: lightcoral;
+    }
+
+}

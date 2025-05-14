@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    
+</head>
+<body>
+    <!--Barra de Navegacion-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.jpg" alt="ArtExpo" class="logo">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contactanos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="imagenes.html">Imagenes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Promociones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nuestra Empresa</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!--Header-->
+    <header>
+        <h1>Bienvenidos a la Galería ArtExpo</h1>
+    </header>
+    <br>
+    
+    <!--Formulario-->
+    <main class="contenido">
+        <div class="container">
+            <div class="row row-cols-3">
+              <div class="col">
+                <table>
+                    <tr>
+                      <th class="text-start">
+                        FORMULARIO DE REGISTRO
+                      </th>
+                    </tr>
+                  </table>
+              </div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col">
+                <form>
+                    <table cellpadding="10">
+                        <tr>
+                            <td><label for="nombre">Nombre completo:</label></td>
+                            <td><input type="text" id="nombre" class="form-control"
+                                name="nombre" required placeholder="Ej. Juan Perez"
+                                pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+"></td>
+                          </tr>
+                          <tr>
+                            <td><label for="email">Correo electronico:</label></td>
+                            <td><input type="email" id="email" class="form-control"
+                                name="email" required placeholder="Ej. juan.perez@ejemplo.com"></td>
+                          </tr>
+                          <tr>
+                            <td><label for="pass">Contraseña:</label></td>
+                            <td><input type="password" id="pass" class="form-control"
+                                name="pass" required placeholder="Ej. Ds21a2020$"
+                                pattern="^[A-Z][A-Za-z\d\W]{9,}$"
+                                title="Debe iniciar con mayuscula, contener letras, numeros y caracter especial, minimo de 10 caracteres"></td>
+                          </tr>
+                          <tr>
+                            <td><label for="telefono">Telefono:</label></td>
+                            <td><input type="tel" id="telefono" class="form-control"
+                                name="tel" required placeholder="Ej.1234567890"></td>
+                          </tr>
+                          <tr>
+                            <td><label for="paises">Pais:</label></td>
+                            <td>
+                              <select id="paises" class="form-select">
+                                <option value="seleccion">Selecciona tu pais</option>
+                                <option value="elSalvador">El Salvador</option>
+                                <option value="elSalvador">Guatemala</option>
+                                <option value="elSalvador">Honduras</option>
+                              </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td><input type="submit" value="Enviar" class="btn btn-success"></td>
+                          </tr>
+                    </table>
+                </form>
+              </div>
+              <div class="col"></div>
+            </div>
+        </div>
+    </main>
+    
+
+    <!--Footer-->
+    <footer>
+        <p><strong>ArtExpo S.A. de C.V.</strong><br>
+        Direccion: Carretera Panamericana, Santa Tecla, El Salvador<br>
+        Teléfono: 1234-5678<br>
+        Email: artexpo@gmail.com</p>
+    
+        <div class="redes">
+          <p>Siguenos en redes sociales:</p>
+          <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+          <a href="https://www.twitter.com/" target="_blank">Twitter</a>
+          <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+          <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

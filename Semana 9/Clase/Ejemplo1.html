@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase de javaSript</title>
+    <style>
+        body
+        {   font-family: Arial, sans-serif;
+            margin: 10px;
+        }
+        .seccion
+        {
+            margin-bottom: 40px;
+        }
+        button
+        {
+            margin-top: 10px;
+        }
+        #caja { padding: 10px; border: 1px solid #ccc; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>CLASE DE JAVASCRIPT. - Ejercicios Prácticos</h1>
+    <div class="seccion">
+        <h2>1. Sintaxis Básica</h2>
+        <button onclick="saludar()">Mostrar Saludo</button>
+        <script>
+            function saludar()
+            {
+                let nombre = "Arquimides";
+                alert("Hola "+nombre+ " 👋");
+            }
+        </script>
+    </div>
+    <div class="seccion">
+        <h2>2. Condiciones(if)</h2>
+        <button onclick="VerificarEdad()">Eres mayor de edad?</button>
+        <script>
+            function VerificarEdad()
+            {
+                let edad= prompt("Cual es tu edad?");
+                if (edad>= 18)
+                {
+                    alert("Eres mayor de edad")
+                }
+                else
+                {
+                    alert("Eres menor de Edad")
+                }
+
+            }
+        </script>
+    </div>
+    <div class="seccion">
+        <h2>3. Bucles</h2>
+        <button onclick="MostrarNumeros()">Numeros del 1 al 5</button>
+
+        <script>
+            function MostrarNumeros()
+            {
+                var f=1;
+                for(let i=1; i<=5;i++)
+                {
+                    f= f * i;
+                    console.log("Número: "+i);
+                }
+                console.log("El factorial de 5 es ="+ f);
+                alert("Revisa la consola (F12) para ver los números");
+                
+            }
+        </script>
+    </div>
+    <div class="seccion">
+        <h2>Manipulación de DOM</h2>
+        <P id="texto">Texto Original</P>
+        <button onclick="CambiarTexto()">Cambiar Texto</button>
+        <button onclick="CambiarColor()">Cambiar Color</button>
+        <script>
+            function CambiarTexto()
+            {
+                document.getElementById("texto").innerText="Texto Modificado con JavaScript";
+
+            }
+            function CambiarColor()
+            {
+
+                document.getElementById("texto").style.color="blue"
+            }
+        </script>
+
+    </div>
+    <div>
+        <h2>5. Eventos</h2>
+        <button id="eventoBoton">Haz clic Aqui</button>
+        <p id="eventoResultado"></p>
+
+        <script>
+            document.getElementById("eventoBoton").addEventListener("click",function(){
+            document.getElementById("eventoResultado").innerText="click detectado!";});
+        </script>
+    </div>
+    <div class="seccion">
+        <h2>6. Interacción</h2>
+        <div id="caja">Esta caja cambiara de color</div>
+        <button onclick="document.getElementById('caja').style.backgroundColor='#FFCCCC'">
+            Cambiar color de Fondo
+        </button>
+    </div>
+    
+    
+</body>
+</html>

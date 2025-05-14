@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Semana 9</title>
+</head>
+<body onload = "alerta()">
+
+    <script>
+        function alerta(){
+            alert("Bienvenido a mi sitio web");
+        };
+    </script>
+
+    <h1>Edad Minima</h1>
+    <button onclick="verificarEdad()">
+        Eres mayor de edad?
+    </button>
+    <script>
+        function verificarEdad()
+        {
+            let edad= prompt("Cual es tu edad?");
+            if (edad>= 18)
+            {
+                alert("Eres mayor de edad")
+            }
+            else
+            {
+                alert("Eres menor de edad")
+            }
+
+        }
+    </script>
+
+    <h1>Numeros Pares</h1>
+    <button onclick="numeroPar()">
+        Mostrar Numeros
+    </button>
+    <script>
+        function numeroPar(){
+            for(let i=0; i<=20;i++){
+                if(i%2 === 0){
+                    console.log(i);
+                }
+            }
+        }
+    </script>
+
+    <h1>Cambiar Contenido</h1>
+    <p id="parrafo">How Dare You</p>
+    <button onclick="cambiarTexto()">Cambiar</button>
+
+    <script>
+        function cambiarTexto() {
+            document.getElementById("parrafo").innerText = "How Dare You - Temporada 2";
+        }
+    </script>
+
+    <h1>Estilos Dinamicos</h1>
+    <div id="miCaja"></div>
+    <button onclick="cambiarColor()">Cambiar Color</button>
+
+    <style>
+        #miCaja {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+        }
+    </style>
+    <script>
+        function cambiarColor() {
+            document.getElementById("miCaja").style.backgroundColor = "lightgreen";
+        }
+    </script>
+
+    <h1>Evento del Mouse</h1>
+    <h2 onmouseover="mostrarMensaje()">Pasa el mouse sobre este texto</h2>
+    <p id="mensaje"></p>
+
+    <script>
+        function mostrarMensaje() {
+            document.getElementById("mensaje").innerText = "El mouse paso por encima";
+        }
+    </script>
+</body>
+</html>

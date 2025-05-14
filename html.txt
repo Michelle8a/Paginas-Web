@@ -150,7 +150,7 @@ Your browser does not support the video tag.
 src="https://www.youtube.com/embed/tgbNymZ7vqY">
 </iframe>
 
-INPUT
+INPUT - Semana 2
 <input type="button">               <input type="image">
 <input type="month">                <input type="hidden">
 <input type="number">               <input type="file">
@@ -164,6 +164,15 @@ INPUT
 <input type="time">
 <input type="text"> (default value)
 
+
+<label for="cars">Choose a car:</label>
+
+<select name="cars" id="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
 
 
 

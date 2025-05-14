@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase de javaSript</title>
+    <style>
+        body
+        {   font-family: Arial, sans-serif;
+            margin: 10px;
+        }
+        .seccion
+        {
+            margin-bottom: 40px;
+        }
+        button
+        {
+            margin-top: 10px;
+        }
+        #caja { padding: 10px; border: 1px solid #ccc; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>CLASE DE JAVASCRIPT. - Ejercicios Prácticos</h1>
+    <div class="seccion">
+        <h2>1. Sintaxis Básica</h2>
+        <button onclick="saludar()">Mostrar Saludo</button>
+    </div>
+    <div class="seccion">
+        <h2>2. Condiciones(if)</h2>
+        <button onclick="VerificarEdad()">Eres mayor de edad?</button>
+    </div>
+    <div class="seccion">
+        <h2>3. Bucles</h2>
+        <button onclick="MostrarNumeros()">Numeros del 1 al 5</button>
+
+    </div>
+    <div class="seccion">
+        <h2>4. Manipulación de DOM</h2>
+        <P id="texto">Texto Original</P>
+        <button onclick="CambiarTexto()">Cambiar Texto</button>
+        <button onclick="CambiarColor()">Cambiar Color</button>
+    </div>
+    <div>
+        <h2>5. Eventos</h2>
+        <button id="eventoBoton">Haz clic Aqui</button>
+        <p id="eventoResultado"></p>
+
+    </div>
+    <div class="seccion">
+        <h2>6. Interacción</h2>
+        <div id="caja">Esta caja cambiara de color</div>
+        <button onclick="document.getElementById('caja').style.backgroundColor='#FFCCCC'">
+            Cambiar color de Fondo
+        </button>
+    </div>
+    <script src="script.js">
+
+    </script>
+    
+    
+</body>
+</html>

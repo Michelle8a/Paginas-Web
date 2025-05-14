@@ -1,0 +1,107 @@
+//Variables
+var nombre = "Juan"; //Variable con alcance de funcion
+let edad = 25; //Variable con alcance de bloque
+const PI = 3.14; //Constante(no puede ser reasignada)
+
+//Tipos de datos
+let entero = 10;
+let flotante = 3.14;
+
+let cadenaSimple = 'Hola mundo!';
+let cadenaDoble = "Hola mundo!";
+
+let esVerdadero = true;
+let esFalso = false;
+
+//Arrays
+let numeros = [1, 2, 3, 4, 5];
+let colores = ['rojo', 'verde', 'azul'];
+
+//Objetos
+let persona = {
+    nombre: 'Juan',
+    edad: 30,
+    ciudad: 'Madrid'
+};
+
+//Undefinded
+let indefinido;
+console.log(indefinido); //Output: undefinded
+
+//Null
+let nulo = null;
+
+//--------------Operadores------------------
+
+//Aritmeticos
+let suma = 10 + 5;
+let resta = 20 - 8;
+let multiplicaion = 6 * 4;
+let division = 15 / 3;
+let modulo = 10 % 3;
+
+//Comparacion
+let igualdad = 10 === 5;
+let desigualdad = 10 === 5;
+let mayorQue = 10 > 5;
+let menorQue = 10 < 5;
+let mayorIgualQue = 10 >= 5;
+let menorIgualQue = 10 <= 5;
+
+//Logicos
+let and = true && false //Solo es verdadero si ambas expresiones son verdaderas
+let or = true || false //verdadero si almenos una es verdadera
+let not = !true //niega el valor
+
+//---------------Funciones-----------------
+
+//Definicion de una funcion
+function sumar(a,b){
+    return a + b;
+}
+
+//LLamar a la funcion
+var resultado = sumar(5,3);
+
+//Condicionales
+var edad1 = 20;
+
+if (edad >= 18){
+    console.log("Eres mayor de edad");
+}
+else{
+    console.log("Eres menor de edad");
+}
+
+//Bucles
+for (var i = 0; i <= 5; i++){
+    console.log(i); //Imprime los numeros del 0 al 5
+}
+
+var contador = 0;
+while (contador < 5) {
+    console.log(contador); //Imprime los numeros del 0 al 4
+    contador++;
+}
+
+//-------Manipulacion del DOM(Document Object Model)---------
+
+document.getElementById("demo").innerHTML = "Hola mundo";
+
+/*En HTML
+    <body>
+	    <div id="demo">Este es un texto inicial</div>
+	    <script src= js/script.js></script>
+    </body>
+*/
+
+document.getElementById("miBoton").addEventListener("click", function(){
+    alert("Haz hecho cclick en el boton");
+})
+
+/*En HTML
+    <body>
+	    <button id="miBoton">Haz click aqui</button>
+	    <script src= js/script.js></script>
+    </body>
+*/
